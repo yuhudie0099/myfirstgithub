@@ -32,13 +32,8 @@ function slideImg() {
 		for(var i = 0; i < len; i++) {
 		navA[i].id=i;
 		
-//		navA[i].onmouseover=function  () {
-//			index = this.id;
-//		clearInterval(timer);
-//		changeImg();
-//		}
-//onclick事件需要点击两次才会有效，改成onmouseover就没问题，请问是哪里出错？
-		navA[i].onclick= function() {
+
+		navA[i].onmouseover= function() {
 			clearInterval(timer);
 			index = this.id;
 			changeImg();
